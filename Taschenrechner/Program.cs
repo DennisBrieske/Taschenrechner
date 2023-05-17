@@ -16,12 +16,12 @@ namespace Taschenrechner
             Console.Write("Bitte gib die zweite Zahl ein: ");
             string zahl2 = Console.ReadLine();
 
-            // Wandel Text in Ganzzahl
-            int ersteGanzZahl = Convert.ToInt32(zahl1);
-            int zweiteGanzZahl = Convert.ToInt32(zahl2);
+            // Wandel Text in Gleitkommazahl
+            float ersteGanzZahl = Convert.ToSingle(zahl1);
+            float zweiteGanzZahl = Convert.ToSingle(zahl2);
 
             // Berechnung ausführen
-            int summe = ersteGanzZahl + zweiteGanzZahl;
+            float summe = ersteGanzZahl + zweiteGanzZahl;
 
             // Ausgabe der Summe
             Console.WriteLine("Die Summe ist: {0}", summe);
