@@ -9,7 +9,8 @@ Story: Als Entwickler möchte ich den Quellcode sauber strukturieren, um später e
 Akzeptanzkriterium:
 	• Das Single Level of Abstraction Prinzip wird eingehalten, oder eine Abweichung ist begründet und dokumentiert
 Status:
-	• offen
+	• Umgesetzt
+	• Erledigt
 
 _________________________________________________________________________________________________________________
 

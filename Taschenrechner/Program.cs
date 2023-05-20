@@ -20,11 +20,11 @@ namespace Taschenrechner
         static void Main(string[] args)
         {
             // User Story "Addieren": Als Benutzer möchte ich zwei Zahlen eingeben, um deren Summe berechnen zu lassen
-
             string ersterSummand = HoleSummanden("Bitte gib die erste Zahl ein: ");
             string zweiterSummand = HoleSummanden("Bitte gib die zweite Zahl ein: ");
 
             // Wandel Text in Gleitkommazahl
+            // TODO: Auslagern in Methode, wenn Struktur umfangreicher geworden ist.
             double ersterSummandAlsZahl = Convert.ToDouble(ersterSummand);
             double zweiterSummandAlsZahl = Convert.ToDouble(zweiterSummand);
 
@@ -33,7 +33,6 @@ namespace Taschenrechner
 
             // Ausgabe der Summe
             Console.WriteLine("Die Summe ist: {0}", summe);
-
             WarteAufBenutzerEingabe();
         }
 
