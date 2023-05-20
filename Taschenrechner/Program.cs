@@ -17,16 +17,29 @@ namespace Taschenrechner
             string zahl2 = Console.ReadLine();
 
             // Wandel Text in Gleitkommazahl
-            float ersteGanzZahl = Convert.ToSingle(zahl1);
-            float zweiteGanzZahl = Convert.ToSingle(zahl2);
+            double ersteGanzZahl = Convert.ToDouble(zahl1);
+            double zweiteGanzZahl = Convert.ToDouble(zahl2);
 
             // Berechnung ausführen
-            float summe = ersteGanzZahl + zweiteGanzZahl;
+            double summe = Addiere(ersteGanzZahl, zweiteGanzZahl);
 
             // Ausgabe der Summe
             Console.WriteLine("Die Summe ist: {0}", summe);
-            Console.ReadLine();
 
+            WarteAufBenutzerEingabe();
+        }
+
+        static double Addiere(double ersterSummand, double zweiterSummand)
+        {
+            double summe = ersterSummand + zweiterSummand;
+
+            return summe;
+        }
+
+        static void WarteAufBenutzerEingabe()
+        {
+            Console.Write("Zum Beenden RETURN drücken!");
+            Console.ReadLine();
         }
     }
 }
